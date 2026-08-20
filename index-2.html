@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funny Ludo: MD Farhan — Download APK</title>
+<meta name="description" content="Funny Ludo by MD Farhan — the classic board game with a twist. Download the APK free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#14123B;
+    --navy-deep:#0C0B29;
+    --gold:#F5C518;
+    --gold-soft:#FFE28A;
+    --cream:#FFF8E7;
+    --p-blue:#2F6FED;
+    --p-red:#E8433A;
+    --p-green:#3FA84A;
+    --p-yellow:#FBC02D;
+    --radius:22px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:
+      radial-gradient(circle at 15% 10%, rgba(47,111,237,0.18), transparent 40%),
+      radial-gradient(circle at 85% 20%, rgba(232,67,58,0.16), transparent 40%),
+      radial-gradient(circle at 20% 90%, rgba(63,168,74,0.16), transparent 40%),
+      radial-gradient(circle at 90% 85%, rgba(251,192,45,0.14), transparent 40%),
+      var(--navy);
+    color:var(--cream);
+    font-family:'Nunito', sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+  a{color:inherit;}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 24px;}
+
+  /* ---------- NAV ---------- */
+  nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:20px 24px; max-width:1080px; margin:0 auto;
+  }
+  .brand{display:flex; align-items:center; gap:10px; font-family:'Baloo 2', sans-serif; font-weight:700; font-size:1.15rem;}
+  .brand img{width:36px; height:36px; border-radius:10px; box-shadow:0 4px 14px rgba(0,0,0,0.4);}
+  .nav-cta{
+    background:var(--gold); color:var(--navy-deep); font-family:'Baloo 2', sans-serif; font-weight:700;
+    padding:10px 20px; border-radius:999px; font-size:0.9rem; text-decoration:none;
+    box-shadow:0 4px 0 #b8920a;
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    display:flex; flex-direction:column; align-items:center; text-align:center;
+    padding:40px 24px 30px;
+    position:relative;
+  }
+  .icon-frame{
+    position:relative; width:150px; height:150px; margin-bottom:22px;
+    animation:float 3.4s ease-in-out infinite;
+  }
+  .icon-frame img{
+    width:100%; height:100%; border-radius:34px;
+    box-shadow:0 18px 40px rgba(0,0,0,0.55), 0 0 0 4px rgba(245,197,24,0.35);
+  }
+  @keyframes float{
+    0%,100%{transform:translateY(0) rotate(-1.5deg);}
+    50%{transform:translateY(-10px) rotate(1.5deg);}
+  }
+  .eyebrow{
+    font-family:'Baloo 2', sans-serif; font-weight:600; font-size:0.85rem; letter-spacing:0.14em;
+    text-transform:uppercase; color:var(--gold-soft); margin-bottom:14px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--gold);}
+  h1{
+    font-family:'Baloo 2', sans-serif; font-weight:800;
+    font-size:clamp(2.6rem, 8vw, 4.6rem); line-height:0.95; letter-spacing:-0.01em;
+    text-shadow:0 6px 0 rgba(0,0,0,0.35);
+  }
+  h1 .l1{color:#6EA0FF;}
+  h1 .l2{color:#FF6B62;}
+  h1 .l3{color:#63C96E;}
+  h1 .l4{color:#FDD84A;}
+  .tagline{
+    font-family:'Baloo 2', sans-serif; font-weight:600; font-size:1.05rem;
+    color:var(--gold-soft); margin-top:10px; letter-spacing:0.02em;
+  }
+  .subcopy{
+    max-width:480px; margin:18px auto 0; color:rgba(255,248,231,0.78);
+    font-size:1.02rem; line-height:1.55;
+  }
+
+  .cta-row{margin-top:30px; display:flex; flex-direction:column; align-items:center; gap:10px;}
+  .btn-download{
+    font-family:'Baloo 2', sans-serif; font-weight:700; font-size:1.15rem;
+    background:linear-gradient(180deg, #FFE28A, var(--gold));
+    color:var(--navy-deep); border:none; padding:18px 42px; border-radius:999px;
+    cursor:pointer; box-shadow:0 6px 0 #b8920a, 0 14px 30px rgba(245,197,24,0.25);
+    transition:transform .12s ease, box-shadow .12s ease;
+    display:inline-flex; align-items:center; gap:10px;
+  }
+  .btn-download:hover{transform:translateY(-2px);}
+  .btn-download:active{transform:translateY(3px); box-shadow:0 2px 0 #b8920a;}
+  .btn-download:focus-visible{outline:3px solid #fff; outline-offset:3px;}
+  .meta-line{font-size:0.82rem; color:rgba(255,248,231,0.55);}
+
+  /* ---------- DICE STRIP (signature element) ---------- */
+  .dice-strip{
+    display:flex; justify-content:center; gap:14px; margin-top:44px; flex-wrap:wrap;
+  }
+  .pawn{
+    width:14px; height:14px; border-radius:50%;
+    box-shadow:0 3px 6px rgba(0,0,0,0.4);
+    animation:hop 1.6s ease-in-out infinite;
+  }
+  .pawn.b{background:var(--p-blue); animation-delay:0s;}
+  .pawn.r{background:var(--p-red); animation-delay:0.15s;}
+  .pawn.g{background:var(--p-green); animation-delay:0.3s;}
+  .pawn.y{background:var(--p-yellow); animation-delay:0.45s;}
+  @keyframes hop{
+    0%,100%{transform:translateY(0);}
+    50%{transform:translateY(-14px);}
+  }
+
+  /* ---------- FEATURES ---------- */
+  .features{padding:70px 24px 20px;}
+  .section-title{
+    font-family:'Baloo 2', sans-serif; font-weight:800; font-size:clamp(1.6rem,4vw,2.2rem);
+    text-align:center; margin-bottom:8px;
+  }
+  .section-sub{
+    text-align:center; color:rgba(255,248,231,0.65); max-width:460px; margin:0 auto 40px; font-size:0.98rem;
+  }
+  .grid{
+    display:grid; grid-template-columns:repeat(4, 1fr); gap:18px; max-width:1080px; margin:0 auto;
+  }
+  @media (max-width:820px){.grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:480px){.grid{grid-template-columns:1fr;}}
+  .card{
+    background:rgba(255,255,255,0.045); border:1px solid rgba(255,255,255,0.08);
+    border-radius:var(--radius); padding:26px 20px; text-align:left;
+  }
+  .card .chip{
+    width:38px; height:38px; border-radius:12px; margin-bottom:16px;
+    display:flex; align-items:center; justify-content:center; font-size:1.1rem;
+  }
+  .card.c1 .chip{background:rgba(47,111,237,0.22);}
+  .card.c2 .chip{background:rgba(232,67,58,0.22);}
+  .card.c3 .chip{background:rgba(63,168,74,0.22);}
+  .card.c4 .chip{background:rgba(251,192,45,0.22);}
+  .card h3{font-family:'Baloo 2', sans-serif; font-size:1.05rem; margin-bottom:6px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;}
+  .card p{font-size:0.9rem; color:rgba(255,248,231,0.65); line-height:1.5;}
+  .card.soon{opacity:0.75;}
+  .soon-badge{
+    font-family:'Baloo 2', sans-serif; font-weight:700; font-size:0.62rem; letter-spacing:0.06em;
+    background:rgba(251,192,45,0.18); color:var(--p-yellow); border:1px solid rgba(251,192,45,0.4);
+    padding:3px 8px; border-radius:999px; text-transform:uppercase;
+  }
+  .features-media{
+    display:flex; justify-content:center; margin:0 auto 46px;
+  }
+  .features-media img{
+    width:150px; height:150px; border-radius:32px;
+    box-shadow:0 16px 34px rgba(0,0,0,0.5), 0 0 0 4px rgba(245,197,24,0.3);
+  }
+
+  /* ---------- STEPS ---------- */
+  .steps{padding:80px 24px;}
+  .steps-inner{
+    max-width:640px; margin:0 auto; background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.08); border-radius:28px; padding:36px 30px;
+  }
+  .step{display:flex; gap:16px; padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.07);}
+  .step:last-child{border-bottom:none;}
+  .step .mark{
+    font-family:'Baloo 2', sans-serif; font-weight:700; color:var(--navy-deep);
+    background:var(--gold); width:30px; height:30px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:0.9rem;
+  }
+  .step h4{font-family:'Baloo 2', sans-serif; font-size:1rem; margin-bottom:3px;}
+  .step p{font-size:0.88rem; color:rgba(255,248,231,0.6);}
+
+  footer{
+    text-align:center; padding:40px 24px 50px; color:rgba(255,248,231,0.4); font-size:0.82rem;
+  }
+
+  /* ---------- AD-GATE MODAL ---------- */
+  .modal-overlay{
+    position:fixed; inset:0; background:rgba(6,5,24,0.82); backdrop-filter:blur(4px);
+    display:none; align-items:center; justify-content:center; z-index:100; padding:20px;
+  }
+  .modal-overlay.open{display:flex;}
+  .modal{
+    background:var(--navy); border:1px solid rgba(255,255,255,0.12); border-radius:24px;
+    max-width:420px; width:100%; padding:28px; text-align:center;
+    box-shadow:0 30px 70px rgba(0,0,0,0.6);
+  }
+  .modal h3{font-family:'Baloo 2', sans-serif; font-size:1.2rem; margin-bottom:6px;}
+  .modal .sub{font-size:0.85rem; color:rgba(255,248,231,0.6); margin-bottom:20px;}
+  .ad-slot{
+    background:repeating-linear-gradient(45deg, rgba(255,255,255,0.04), rgba(255,255,255,0.04) 10px, rgba(255,255,255,0.02) 10px, rgba(255,255,255,0.02) 20px);
+    border:1px dashed rgba(255,255,255,0.25); border-radius:14px;
+    height:160px; display:flex; align-items:center; justify-content:center;
+    font-size:0.78rem; color:rgba(255,248,231,0.4); margin-bottom:20px; text-align:center; padding:10px;
+  }
+  .timer-ring{
+    width:64px; height:64px; margin:0 auto 18px; position:relative;
+  }
+  .timer-ring svg{transform:rotate(-90deg); width:64px; height:64px;}
+  .timer-ring circle{fill:none; stroke-width:6;}
+  .timer-ring .bg{stroke:rgba(255,255,255,0.1);}
+  .timer-ring .fg{stroke:var(--gold); stroke-linecap:round; transition:stroke-dashoffset 1s linear;}
+  .timer-num{
+    position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+    font-family:'Baloo 2', sans-serif; font-weight:700; font-size:1.2rem;
+  }
+  .modal .btn-download{width:100%; justify-content:center; font-size:1rem; padding:15px;}
+  .modal .btn-download:disabled{opacity:0.4; cursor:not-allowed; transform:none;}
+  .close-x{
+    position:absolute; top:14px; right:18px; background:none; border:none; color:rgba(255,248,231,0.5);
+    font-size:1.3rem; cursor:pointer; line-height:1;
+  }
+  .modal{position:relative;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand"><img src="assets/icon.png" alt="Funny Ludo icon">Funny Ludo</div>
+  <a class="nav-cta" href="#download">Download</a>
+</nav>
+
+<header class="hero">
+  <div class="icon-frame"><img src="assets/icon.png" alt="Funny Ludo: MD Farhan app icon"></div>
+  <div class="eyebrow"><span class="dot"></span>Free Android APK<span class="dot"></span></div>
+  <h1><span class="l1">FUNNY</span> <span class="l2">LU</span><span class="l3">D</span><span class="l4">O</span></h1>
+  <p class="tagline">by MD Farhan</p>
+  <p class="subcopy">The board game your group chat already argues about — now with chaos built in. Roll, block, laugh, repeat.</p>
+
+  <div class="cta-row" id="download">
+    <button class="btn-download" id="openGate">⬇ Download APK</button>
+    <span class="meta-line">v1.0 · ~35 MB · Android 6.0+</span>
+  </div>
+
+  <div class="dice-strip">
+    <div class="pawn b"></div>
+    <div class="pawn r"></div>
+    <div class="pawn g"></div>
+    <div class="pawn y"></div>
+  </div>
+</header>
+
+<section class="features">
+  <h2 class="section-title">Same board. More trouble.</h2>
+  <p class="section-sub">Four reasons your Ludo group is switching over.</p>
+  <div class="features-media"><img src="assets/icon.png" alt="Funny Ludo: MD Farhan app icon"></div>
+  <div class="grid">
+    <div class="card c1"><div class="chip">🎲</div><h3>Classic rules</h3><p>Same Ludo you grew up with — no confusing new mechanics to learn.</p></div>
+    <div class="card c2"><div class="chip">😂</div><h3>Funny twists</h3><p>Random events and taunts turn every match into a story worth retelling.</p></div>
+    <div class="card c3 soon"><div class="chip">👥</div><h3>Play with friends <span class="soon-badge">Coming soon</span></h3><p>Local multiplayer is on the way — pass-and-play for full-table energy.</p></div>
+    <div class="card c4"><div class="chip">📴</div><h3>Works offline</h3><p>No data, no login walls — install and start rolling.</p></div>
+  </div>
+</section>
+
+<section class="steps">
+  <div class="steps-inner">
+    <h2 class="section-title" style="margin-bottom:24px;">How to install</h2>
+    <div class="step"><div class="mark">1</div><div><h4>Tap Download APK</h4><p>Wait a few seconds while a short ad supports the app — then the file unlocks.</p></div></div>
+    <div class="step"><div class="mark">2</div><div><h4>Open the downloaded file</h4><p>Your browser will show it in notifications or the Downloads folder.</p></div></div>
+    <div class="step"><div class="mark">3</div><div><h4>Allow install from this source</h4><p>Android will ask once — approve it, since this isn't from the Play Store.</p></div></div>
+    <div class="step"><div class="mark">4</div><div><h4>Install and play</h4><p>That's it. Gather your friends and roll the dice.</p></div></div>
+  </div>
+</section>
+
+<footer>
+  Funny Ludo: MD Farhan — fan-made, independent project. Not affiliated with any official Ludo brand.
+</footer>
+
+<!-- ---------- AD-GATE MODAL ---------- -->
+<div class="modal-overlay" id="gateOverlay">
+  <div class="modal">
+    <button class="close-x" id="closeGate" aria-label="Close">✕</button>
+    <h3>Your download is almost ready</h3>
+    <p class="sub">This quick ad keeps Funny Ludo free for everyone.</p>
+
+    <!--
+      AD NETWORK SLOT
+      Replace this div's contents with your ad network's actual embed code
+      (e.g. Adsterra / Monetag / AdSense display unit). Leave the id="adSlot"
+      wrapper in place so the layout stays intact.
+    -->
+    <div class="ad-slot" id="adSlot">Ad space — paste your ad network's embed code here</div>
+
+    <div class="timer-ring">
+      <svg viewBox="0 0 64 64">
+        <circle class="bg" cx="32" cy="32" r="27"></circle>
+        <circle class="fg" id="ringFg" cx="32" cy="32" r="27" stroke-dasharray="169.6" stroke-dashoffset="0"></circle>
+      </svg>
+      <div class="timer-num" id="timerNum">5</div>
+    </div>
+
+    <!--
+      Set data-href to your real APK link, e.g. a GitHub Releases URL:
+      https://github.com/<user>/<repo>/releases/download/v1.0/funny-ludo.apk
+    -->
+    <button class="btn-download" id="realDownload" disabled data-href="REPLACE_WITH_YOUR_APK_LINK">Preparing your download…</button>
+  </div>
+</div>
+
+<script>
+  const openBtn = document.getElementById('openGate');
+  const overlay = document.getElementById('gateOverlay');
+  const closeBtn = document.getElementById('closeGate');
+  const realBtn = document.getElementById('realDownload');
+  const timerNum = document.getElementById('timerNum');
+  const ringFg = document.getElementById('ringFg');
+  const CIRC = 169.6;
+  let seconds = 5;
+  let intervalId = null;
+
+  function resetGate(){
+    seconds = 5;
+    timerNum.textContent = seconds;
+    ringFg.style.strokeDashoffset = 0;
+    realBtn.disabled = true;
+    realBtn.textContent = 'Preparing your download…';
+  }
+
+  function startTimer(){
+    clearInterval(intervalId);
+    intervalId = setInterval(() => {
+      seconds -= 1;
+      timerNum.textContent = Math.max(seconds, 0);
+      ringFg.style.strokeDashoffset = CIRC * ((5 - seconds) / 5);
+      if (seconds <= 0){
+        clearInterval(intervalId);
+        realBtn.disabled = false;
+        realBtn.textContent = '⬇ Download APK now';
+      }
+    }, 1000);
+  }
+
+  openBtn.addEventListener('click', () => {
+    overlay.classList.add('open');
+    resetGate();
+    startTimer();
+  });
+
+  closeBtn.addEventListener('click', () => {
+    overlay.classList.remove('open');
+    clearInterval(intervalId);
+  });
+
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay){
+      overlay.classList.remove('open');
+      clearInterval(intervalId);
+    }
+  });
+
+  realBtn.addEventListener('click', () => {
+    if (realBtn.disabled) return;
+    const href = realBtn.getAttribute('data-href');
+    window.location.href = href;
+  });
+</script>
+
+</body>
+</html>
